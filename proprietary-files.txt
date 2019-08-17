@@ -37,13 +37,17 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
 # Alarm
--framework/vendor.qti.hardware.alarm-V1.0-java.jar
--vendor/app/PowerOffAlarm/PowerOffAlarm.apk|881e8db50782b0c72aa9ca51731f30156c097f78
+framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
+vendor/lib/libalarmservice_jni.so
+vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
+vendor/lib64/libalarmservice_jni.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+
 
 # ANT+ - from lavender - PKQ1.180904.001 V10.2.3.0.PFGCNXM
 -lib/libantradio.so|d1f41ee14d4cd7b3a306a628bca5cc9e19027201
@@ -81,41 +85,8 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcvirt.so
 
 # Audio ACDB
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_Codec_cal.acdb
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_General_cal.acdb
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_workspaceFile.qwsp
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_Global_cal.acdb
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/sdm660-tavil-snd-card/MTP_WCD9340_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
-vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_General_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_Global_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Global_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_General_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Hdmi_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
@@ -123,26 +94,28 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Global_cal.acdb
-vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_General_cal.acdb
-vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Handset_cal.acdb
 
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
 
-# Bluetooth - from lavender - PPR1.180904.001 V10.2.3.0.PFGCNXM
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|dff50e256246ab04e01ec5658f94073dddb9fb0c
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so|65044df90882e97700a7fbd3405a2c64423d7f01
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|e3aac2202a3242d3f29219df481a34aefd78adc7
-vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so|eb68ea9f4021cc28d9267dd6c0e10ded248e4a89
-vendor/lib64/libbt-hidlclient.so|cd3513edb12f5e9ef1825c13a290d42e05b7a69b
-vendor/lib64/libbtnv.so|c0251f0064fc6fff2444760b0723755fc4a51957
+# Bluetooth
+vendor/bin/btnvtool
+vendor/bin/hci_qcomm_init
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/bin/wcnss_filter
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
+vendor/lib/libbt-hidlclient.so
+vendor/lib/libbt-vendor.so
+vendor/lib/libbtnv.so
+vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
+vendor/lib64/libbt-hidlclient.so
+vendor/lib64/libbt-vendor.so
+vendor/lib64/libbtnv.so
 
 # Camera
 vendor/lib/hw/camera.sdm660.so
@@ -809,7 +782,8 @@ vendor/etc/qdcm_calib_data_nt36672_1080p_video_mode_dsi_txd_panel.xml
 vendor/etc/qdcm_calib_data_td4310_1080p_video_mode_dsi_txd_panel.xml
 
 #Display Firmware
-vendor/firmware/mono.cnt
+vendor/firmware/novatek_ts_fw_dj.bin
+vendor/firmware/novatek_ts_fw_txd.bin
 vendor/firmware/startup_fw_update.img
 
 # DPM
