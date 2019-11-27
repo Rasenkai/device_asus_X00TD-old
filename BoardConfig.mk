@@ -234,6 +234,10 @@ VENDOR_SECURITY_PATCH := 2019-10-05
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := libinit_X00TD
+TARGET_RECOVERY_DEVICE_MODULES := libinit_X00TD
+
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
