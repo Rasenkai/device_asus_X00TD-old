@@ -111,27 +111,27 @@ on boot
     chown system system /mnt/vendor/persist/speccfg/partition
 
     # Sensors
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_enable
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_delay
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_calibrate
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_enable_wakeup
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_flush
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_enable
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_delay
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_calibrate
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_enable_wakeup
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_flush
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_enable
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_delay
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_calibrate
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_enable_wakeup
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_flush
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_enable
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_delay
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_calibrate
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_enable_wakeup
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_flush
 
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_enable
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_delay
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_calibrate
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_enable_wakeup
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_flush
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_enable
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_delay
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_calibrate
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_enable_wakeup
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_flush
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_enable
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_delay
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_calibrate
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_enable_wakeup
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_flush
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_enable
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_delay
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_calibrate
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_enable_wakeup
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_flush
 
     chown radio radio sys/module/stk3x3x/parameters/call_status_flag
 
